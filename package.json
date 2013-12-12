@@ -1,0 +1,27 @@
+{
+  "name": "geena.http",
+  "description": "Http Client Module for Geena Project",
+  "keywords": [
+    "geena",
+    "geena http",
+    "http",
+    "module",
+    "http client"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Martin-Luther ETOUMAN",
+    "email": "martin@rhinostone.com"
+  },
+  "copyright": "Copyright (c) 2009-2013 Rhinostone <geena@rhinostone.com>",
+  "dependencies": {
+    "geena": "0.0.9"
+  },
+  "engine": [
+    "node >=0.10.22"
+  ],
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
