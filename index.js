@@ -1,5 +1,5 @@
 /*
- * This file is part of the etap package.
+ * This file is part of the geena package.
  * Copyright (c) 2013 Thomson Reuters <etap@thomsonreuters.com>
  *
  * For the full copyright and license information, please view the LICENSE
@@ -7,16 +7,16 @@
  */
 
 /**
- * Geena Http Module
+ * Geena Com Module
  *
  * @author     Martin-Luther ETOUMAN <martin@rhinostone.com>
  */
-var GeenaHttp;
+var GeenaCom;
 
-GeenaHttp = function(){
+GeenaCom = function(){
     return {
-        Client     : require('./client')
+        http     : require('./http')
     };
 };
 
-module.exports = GeenaHttp();
+module.exports = GeenaCom();

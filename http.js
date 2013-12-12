@@ -1,4 +1,4 @@
-/* Geena Http Client
+/* Geena Http HttpClient
  *
  * This file is part of the geena.http package.
  * Copyright (c) 2013 Rhinostone <geena@rhinontone.com>
@@ -8,7 +8,7 @@
  */
 
 /**
- * Client Constructor
+ * HttpClient Constructor
  *
  * @constructor
  *
@@ -20,7 +20,7 @@
  * TODO - Unit tests and functional tests
  *
  * */
-var Client;
+var HttpClient;
 
 //Imports.
 var http        = require('http'),
@@ -31,7 +31,7 @@ if (utils == undefined) {
 }
 var logger      = utils.logger;
 
-Client = function(){
+HttpClient = function(){
     var _this = this;
 
     var _data = {};
@@ -137,4 +137,4 @@ Client = function(){
 
 };
 
-module.exports = Client;
+module.exports = HttpClient;
