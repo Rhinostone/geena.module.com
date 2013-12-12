@@ -1,10 +1,10 @@
 {
-  "name": "geena.http",
-  "description": "Http Client Module for Geena Project",
+  "name": "geena.com",
+  "description": "Simple Communication layer for [Geena](https://github.com/rhinostone/geena) bunldes.",
   "keywords": [
     "geena",
-    "geena http",
-    "http",
+    "geena com",
+    "com",
     "module",
     "http client"
   ],
