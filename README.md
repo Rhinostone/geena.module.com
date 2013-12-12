@@ -1,4 +1,4 @@
-geena.http_client
+geena.com
 =================
 
-Simple HTTP Client for [Geena](https://github.com/rhinostone/geena)
+Simple Communication layer for [Geena](https://github.com/rhinostone/geena) bunldes.
