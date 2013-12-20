@@ -14,9 +14,6 @@
       "email": "geena@rhinosotne.com"
   },
   "copyright": "Copyright (c) 2009-2013 Rhinostone <geena@rhinostone.com>",
-  "dependencies": {
-    "geena": "0.0.8"
-  },
   "engine": [
     "node >=0.10.22"
   ],
