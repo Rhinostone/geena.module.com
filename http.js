@@ -94,11 +94,13 @@ HttpClient = function(){
         //you need this, even for empty.
         options.headers['Content-Length'] = queryData.length;
         var req = http.request(options, function(res) {
-            res.setEncoding('utf8');
-            //console.log("STATUS ", res.statusCode );
+            //Maybe useless ???.
             if (res.statusCode != 200) {
                 var err = 'BAD connection or BAD serveur response on ' + options.host +  ':' +options.port +options.path;
                 logger.error('etap', 'ETAP:HTTPAPI:ERR:1', err, __stack);
+                if ( typeof(callback) != "undefined") {
+                    callback(err);
+                }
             } else {
                 res.on('data', function (chunk) {
                     //Only when needed.
@@ -109,26 +111,23 @@ HttpClient = function(){
                 });
             }
 
-        })
-        .write(queryData);
+        });
+        if (req) {
+            req.write(queryData);
+        }
         //starting from from >0.10.15
-//        .on('error', function(err){
-//            logger.error(
-//                'geena.http',
-//                'GEENA:HTTP_CLIENT:ERR:1',
-//                '['+options.host + '] must be down or refusing connection @ ' + options.host +  ':' +options.port +options.path,
-//                __stack
-//            );
-//        });
-//        if (!req) {
-//            logger.error(
-//                'geena.http',
-//                'GEENA:HTTP_CLIENT:ERR:2',
-//                '['+options.host + '] must be down or refusing connection @ ' + options.host +  ':' +options.port +options.path,
-//                __stack
-//            );
-//        }
-
+        req.on('error', function(err){
+            logger.error(
+                'geena.http',
+                'GEENA:HTTP_CLIENT:ERR:1',
+                '['+options.host + '] must be down or refusing connection @ ' + options.host +  ':' +options.port +options.path,
+                __stack
+            );
+            if ( typeof(callback) != "undefined") {
+                err.stack += '\nat    '+__stack;
+                callback(err);
+            }
+        });
     };
 
     this.download  = function(url, target, callback){
