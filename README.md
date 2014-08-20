@@ -1,4 +1,5 @@
 geena.com
 =================
 
-Simple Communication layer for [Geena](https://github.com/rhinostone/geena) bundles.
+Simple Communication module for [Geena](https://github.com/rhinostone/geena).
+Requires geena 0.0.9-p2+

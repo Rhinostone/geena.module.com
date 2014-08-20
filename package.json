@@ -4,21 +4,23 @@
   "keywords": [
     "geena",
     "geena com",
-    "com",
-    "module",
+    "com module",
     "http client"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
-      "name": "Rhinostone",
-      "email": "geena@rhinosotne.com"
+    "name": "Rhinostone",
+    "email": "geena@rhinosotne.com"
   },
-  "copyright": "Copyright (c) 2009-2013 Rhinostone <geena@rhinostone.com>",
+  "copyright": "Copyright (c) 2009-2014 Rhinostone <geena@rhinostone.com>",
   "engine": [
     "node >=0.10.22"
   ],
   "devDependencies": {},
   "peerDependencies": {},
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "readme": "geena.com\r\n=================\r\n\r\nSimple Communication layer for [Geena](https://github.com/rhinostone/geena) bundles.\r\n",
+  "_id": "geena.com@0.0.2",
+  "_from": "geena.com@"
 }

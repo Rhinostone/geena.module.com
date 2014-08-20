@@ -13,10 +13,10 @@
  */
 var GeenaCom;
 
-GeenaCom = function(){
+GeenaCom = function() {
     return {
-        Http     : require('./http')
-    };
+        http     : require('./lib/http')
+    }
 };
 
-module.exports = GeenaCom();
+module.exports = GeenaCom()
