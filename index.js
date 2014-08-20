@@ -15,7 +15,7 @@ var GeenaCom;
 
 GeenaCom = function() {
     return {
-        Http     : require('./lib/http')
+        http     : require('./lib/http')
     }
 };
 
