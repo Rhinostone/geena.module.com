@@ -1,5 +1,5 @@
 /*
- * This file is part of the geena package.
+ * This file is part of the gina package.
  * Copyright (c) 2013 Thomson Reuters <etap@thomsonreuters.com>
  *
  * For the full copyright and license information, please view the LICENSE
@@ -7,15 +7,13 @@
  */
 
 /**
- * Geena Com Module
+ * Gina Com Module
  *
  * @author     Martin-Luther ETOUMAN <martin@rhinostone.com>
  */
-var GeenaCom;
-
-GeenaCom = function() {
+function GeenaCom() {
     return {
-        http     : require('./lib/http')
+        http : require('./lib/http')
     }
 };
 
