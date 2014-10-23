@@ -1,4 +1,4 @@
-/* Geena Http HttpClient
+/* Gina Http HttpClient
  *
  * This file is part of the geena.http package.
  * Copyright (c) 2013 Rhinostone <geena@rhinontone.com>

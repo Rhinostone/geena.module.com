@@ -11,10 +11,10 @@
  *
  * @author     Martin-Luther ETOUMAN <martin@rhinostone.com>
  */
-function GeenaCom() {
+function GinaCom() {
     return {
         http : require('./lib/http')
     }
 };
 
-module.exports = GeenaCom()
+module.exports = GinaCom()
