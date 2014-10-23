@@ -1,6 +1,6 @@
 /*
- * This file is part of the geena package.
- * Copyright (c) 2009-2014 Rhinostone <geena@rhinostone.com>
+ * This file is part of the gina package.
+ * Copyright (c) 2009-2014 Rhinostone <gina@rhinostone.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -9,9 +9,9 @@
 /**
  * ConsoleHelper
  *
- * @package     Geena.Utils.Helpers
- * @namespace   Geena.Utils.Helpers.ConsoleHelper
- * @author      Rhinostone <geena@rhinostone.com>
+ * @package     Gina.Utils.Helpers
+ * @namespace   Gina.Utils.Helpers.ConsoleHelper
+ * @author      Rhinostone <gina@rhinostone.com>
  * */
 
 module.exports = function() {
@@ -24,7 +24,6 @@ module.exports = function() {
         var args = arguments, content = '';
         //console.log("arg: ", args);
         //To handle logs with coma speparated arguments.
-
         for (var i=0; i<args.length; ++i) {
 
             if (args[i] instanceof Object) {
@@ -35,7 +34,6 @@ module.exports = function() {
             }
         }
 
-        //console.log("hum ? ", content);
         if (content != '')
             process.stdout.write(content + '\n');
     };

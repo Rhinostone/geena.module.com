@@ -1,18 +1,19 @@
 {
-  "name": "geena.com",
-  "description": "Simple Communication layer for [Geena](https://github.com/rhinostone/geena) bundles.",
+  "name": "gina.com",
+  "description": "Simple Communication layer for [Gina](https://github.com/rhinostone/gina) bundles.",
   "keywords": [
+    "gina",
     "geena",
-    "geena com",
+    "gina com",
     "com module",
     "http client"
   ],
   "version": "0.0.2",
   "author": {
     "name": "Rhinostone",
-    "email": "geena@rhinosotne.com"
+    "email": "gina@rhinosotne.com"
   },
-  "copyright": "Copyright (c) 2009-2014 Rhinostone <geena@rhinostone.com>",
+  "copyright": "Copyright (c) 2009-2014 Rhinostone <gina@rhinostone.com>",
   "engine": [
     "node >=0.10.22"
   ],
@@ -20,7 +21,7 @@
   "peerDependencies": {},
   "license": "MIT",
   "readmeFilename": "README.md",
-  "readme": "geena.com\r\n=================\r\n\r\nSimple Communication layer for [Geena](https://github.com/rhinostone/geena) bundles.\r\n",
-  "_id": "geena.com@0.0.2",
-  "_from": "geena.com@"
+  "readme": "gina.com\r\n=================\r\n\r\nSimple Communication layer for [Gina](https://github.com/rhinostone/gina) bundles.\r\n",
+  "_id": "gina.com@0.0.2",
+  "_from": "gina.com@"
 }
