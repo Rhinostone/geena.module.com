@@ -64,13 +64,14 @@ Object.defineProperty( Object.prototype, 'count', {
     enumerable: false,
     //If loaded several times, it can lead to an exception. That's why I put this.
     configurable: true,
-    value: function(){
-        if (this instanceof String) this = JSON.parse(this);
+    value: function() {
+        var _this;
+        if (this instanceof String) _this = JSON.parse(this);
         var i = 0;
-        for (var prop in this)
-            if (this.hasOwnProperty(prop)) ++i;
+        for (var prop in _this)
+            if (_this.hasOwnProperty(prop)) ++i;
 
-        return i;
+        return i
     }
 });
 /**
