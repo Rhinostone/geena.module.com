@@ -21,7 +21,6 @@
   "peerDependencies": {},
   "license": "MIT",
   "readmeFilename": "README.md",
-  "readme": "gina.com\r\n=================\r\n\r\nSimple Communication layer for [Gina](https://github.com/rhinostone/gina) bundles.\r\n",
   "_id": "gina.com@0.0.2",
   "_from": "gina.com@"
 }
